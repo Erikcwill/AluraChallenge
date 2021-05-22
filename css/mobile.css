@@ -1,0 +1,116 @@
+@media screen and (max-width: 500px) {
+    body {
+        padding: 10px;
+    }
+    .cabecalho .container {
+        justify-content: flex-start;
+        width: 100%;
+        margin: 1% 1% 10% 1%;
+    }
+    #busca-primaria {
+        display: none;
+    }
+    .author {
+        display: none;
+    }
+    .conteudo .container {
+        width: 100%;
+        flex-direction: column;
+        margin: 1% 0%;
+    }
+    .menu-esquerdo {
+        display: none;
+    }
+    .central {
+        height: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .conteudo {
+        width: 100%;
+    }
+    .fundo-editor {
+        height: 100%;
+        width: 100%;
+    }
+    .menu-direito {
+        width: 100%;
+        margin-top: 10%;
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+        margin-left: 0%;
+    }
+    .editor-codigo {
+        width: 100%;
+        height: 100%;
+    }
+    #highlight {
+        width: 100%;
+    }
+    .seu-projeto {
+        width: 100%;
+    }
+    .personalizacao {
+        width: 100%;
+    }
+    .lupa-mobile {
+        display: flex;
+        margin: 0% 5%;
+    }
+    .container-salvar-projeto {
+        width: 100%;
+    }
+    .menu {
+        display: flex;
+    }
+    .hamburguer-menu {
+        display: flex;
+    }
+    /*Página da comunidade*/
+    .titulo-central h2 {
+        font-size: 15px;
+    }
+    .central-comunidade {
+        display: flex;
+        flex-direction: column;
+    }
+    .fundo-editor-comunidade {
+        width: 100%;
+        margin: 1% 0%;
+        background-color: #27C93F;
+    }
+    .infos-projetos {
+        width: 100%;
+    }
+    .textos-projeto {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .textos-projeto h1 {
+        width: 100%;
+    }
+    .textos-projeto p {
+        width: 100%;
+    }
+    .menu-direito-comunidade {
+        width: 100%;
+    }
+    #segundo-editor {
+        display: none;
+    }
+    #segundo-info {
+        display: none;
+    }
+    .menu-direito-comunidade h2 {
+        margin: 3% 0%;
+    }
+    .menu-social {
+        flex-direction: row;
+        width: 80%;
+    }
+    .container-comunidade .menu-social {
+        flex-direction: column;
+    }
+}
