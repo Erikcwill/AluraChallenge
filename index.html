@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alura Dev</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="css/tablet.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="imagens/logo.svg" id="logo" alt="Logo da Alura Dev"></a>
+            <div class="busque-algo"><input type="text" class="caixa-busca" id="busca-primaria" placeholder="Busque por algo"></div>
+            <div class="lupa-mobile"> <input type="image" src="imagens/lupa.svg"></div>
+            <input id="menu-hamburguer" type="checkbox" />
+            <label for="menu-hamburguer">
+            <div class="menu">
+               <span class="hamburguer"></span>
+            </div>
+         </label>
+            <div class="author">
+                <a><img src="imagens/foto.svg" alt="Foto de perfil" id="foto">Harry</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="conteudo">
+        <div class="container">
+            <nav class="menu-esquerdo">
+                <h2>Menu</h2>
+                <a href="index.html">
+                    <ul>
+                        <li id="editor-menu" style="background-color:#5081FB;"><img src="imagens/editor-menu-logo.svg" alt="Logo editor de código"></li>
+                        <h3>Editor de código</h3>
+                    </ul>
+                </a>
+                <a href="comunidade.html">
+                    <ul>
+                        <li id="comunidade-menu" style="background:#5081FB29;"><img src="imagens/comunidade-menu-logo.svg" alt="Logo comunidade"></li>
+                        <h3>Comunidade</h3>
+                    </ul>
+                </a>
+
+            </nav>
+
+            <div class=central>
+                <div class="fundo-editor">
+                    <div class="editor-codigo">
+                        <div class="bolinhas">
+                            <span style="background-color:#FF5F56;border-radius: 50%;"></span>
+                            <span style="background-color:#FFBD2E;border-radius: 50%;"></span>
+                            <span style="background-color:#27C93F;border-radius: 50%;"></span>
+                        </div>
+                        <textarea class="campo-codigo"></textarea>
+                    </div>
+                </div>
+                <input type="button" id="highlight" value="Visualizar com o highlight">
+            </div>
+
+            <div class="menu-direito">
+                <h2>Seu projeto</h2>
+                <div class="nome-projeto"><input type="text" class="caixa-busca" id="nome-projeto" placeholder="Nome do seu projeto"></div>
+                <div class="descricao-projeto"><textarea class="caixa-busca" id="descricao-projeto" placeholder="Descrição do seu projeto"></textarea></div>
+                <h2 id="titulo-personalizacao">Personalização</h2>
+
+                <div class="personalizacao">
+                    <div class="tablet-select">
+                        <select class="caixa-busca" name="linguagem" id="linguagem">
+                     <option value="javascript">JavaScript</option>
+                     <option value="HTML">HTML</option>
+                     <option value="CSS">CSS</option>
+                  </select>
+                    </div>
+
+                    <div class="tablet-color"><input type="color" id="colorpick" value="#6BD1FF"></div>
+                </div>
+
+                <div class="container-salvar-projeto"><input type="button" value="Salvar Projeto" id="salvar-projeto">
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
