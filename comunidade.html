@@ -5,179 +5,190 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Alura Dev</title>
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/comunidade.css">
-    <link rel="stylesheet" type="text/css" href="css/tablet.css">
-    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/dark.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/menu-nav/menu-navegacao.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/cabecalho/cabecalho.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/cabecalho/hamburguer-animation.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/editor/editor.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/botoes.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/menu-secundario/menu-secundario.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/comunidade/menu-comunidade.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/comunidade/menu-social.css">
 </head>
 
 <body>
-
     <header class="cabecalho">
         <div class="container">
-            <a href="index.html" class="logo"><img src="imagens/logo.svg" id="logo" alt="Logo da Alura Dev"></a>
-            <div class="busque-algo"><input type="text" class="caixa-busca" id="busca-primaria" placeholder="Busque por algo"></div>
-            <div class="lupa-mobile"> <input type="image" src="imagens/lupa.svg"></div>
-            <input id="menu-hamburguer" type="checkbox" />
-            <label for="menu-hamburguer">
-            <div class="menu">
-               <span class="hamburguer"></span>
+            <a href="index.html" class="logo"><img src="assets/img/logo.svg" alt="Logo da Alura Dev"></a>
+            <div class="cabecalho__caixa__busca"><input type="text" class="caixa__busca__estilo" id="caixa__busca__primaria" placeholder="Busque por algo"></div>
+            <div class="cabecalho__lupa__busca"> <input type="image" src="assets/img/lupa.svg"></div>
+            <div><input id="menu__hamburguer" type="checkbox" />
+                <label for="menu__hamburguer">
+                            <div class="menu__hamburguer__div">
+                            <span class="hamburguer"></span>
+                            </div>
+                    </label>
             </div>
-         </label>
-            <div class="author">
-                <a><img src="imagens/foto.svg" alt="Foto de perfil" id="foto">Harry</a>
+            <div class="cabecalho__perfil">
+                <a><img src="assets/img/foto-perfil.svg" alt="Foto de perfil" class="cabecalho__perfil__foto">Erick William </a>
             </div>
         </div>
     </header>
 
     <main class="conteudo">
         <div class="container">
-            <nav class="menu-esquerdo">
-                <h2>Menu</h2>
-                <a href="index.html">
-                    <ul>
-                        <li id="editor-menu" style="background-color:#5081FB29;"><img src="imagens/editor-menu-logo.svg" alt="Logo editor de código"></li>
-                        <h3>Editor de código</h3>
-                    </ul>
-                </a>
-                <a href="comunidade.html">
-                    <ul>
-                        <li id="comunidade-menu" style="background:#5081FB;"><img src="imagens/comunidade-menu-logo.svg" alt="Logo comunidade"></li>
-                        <h3>Comunidade</h3>
-                    </ul>
-                </a>
+            <nav class="menu__navegacao">
+                <h2 class="menu__navegacao--titulo">Menu</h2>
+                <ul class="menu__navegacao__lista">
+                    <a class="menu__navegacao__link" href="index.html">
+                        <li class="menu__navegacao__item "><img id="menu__navegacao--editor" src="assets/img/comunidade-menu-logo.svg" alt="Logo editor de código"></li>
+                        <p class="menu__navecacao__texto">Editor de código</p>
+                    </a>
+                    <a class="menu__navegacao__link " href="comunidade.html">
+                        <li class="menu__navegacao__item ativo"><img id="menu__navegacao--comunidade" src="assets/img/comunidade-menu-logo.svg" alt="Logo comunidade"></li>
+                        <p class="menu__navecacao__texto">Comunidade</p>
+                    </a>
+                </ul>
             </nav>
 
-            <div class=central-comunidade>
-                <div class="fundo-editor-comunidade" style="background-color: #27C93F;">
-                    <div class="editor-codigo-comunidade">
-                        <div class="bolinhas">
-                            <span style="width:12px;height:12px;display:flex;background-color:#FF5F56;border-radius: 50%;"></span>
-                            <span style="width:12px;height:12px;display:flex;background-color:#FFBD2E;border-radius: 50%;"></span>
-                            <span style="width:12px;height:12px;display:flex;background-color:#27C93F;border-radius: 50%;"></span>
-                        </div>
-                        <textarea class="campo-codigo"></textarea>
+            <div class=principal__comunidade>
+                <div class="principal__editor__comunidade" style="background-color: #27C93F;">
+                    <div class="bolinhas__editor">
+                        <span style="background:#FF5F56;"></span>
+                        <span style="background:#FFBD2E;"></span>
+                        <span style="background:#27C93F;"></span>
+                    </div>
+                    <div class="editor__codigo__comunidade">
                     </div>
                 </div>
-                <div id="segundo-editor" class="fundo-editor-comunidade" style="background-color: #FF5F56;">
-                    <div class="editor-codigo-comunidade">
-                        <div class="bolinhas">
-                            <span style="width:12px;height:12px;display:flex;background-color:#FF5F56;border-radius: 50%;"></span>
-                            <span style="width:12px;height:12px;display:flex;background-color:#FFBD2E;border-radius: 50%;"></span>
-                            <span style="width:12px;height:12px;display:flex;background-color:#27C93F;border-radius: 50%;"></span>
-                        </div>
-                        <textarea class="campo-codigo"></textarea>
-                    </div>
-                </div>
-                <div class="infos-projetos">
-                    <div class="textos-projeto">
-                        <h1>Título do projeto</h1>
-                        <p>Essa é a descrição do meu projeto</p>
-                    </div>
 
-                    <div class="menu-social">
-                        <div class="comentario"><img src="imagens/comment.svg">
-                            <p>18</p>
-                        </div>
-                        <div class="gostei"><img src="imagens/like.svg" alt="">
-                            <p>22</p>
-                        </div>
-                        <div class="mais">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
+                <div class="principal__editor__comunidade" id="segundo__editor" style="background-color: #27C93F;">
+                    <div class="bolinhas__editor">
+                        <span style="background:#FF5F56;"></span>
+                        <span style="background:#FFBD2E;"></span>
+                        <span style="background:#27C93F;"></span>
+                    </div>
+                    <div class="editor__codigo__comunidade">
                     </div>
                 </div>
-                <div id="segundo-info" class="infos-projetos">
+                <div class="infos__projetos__comunidade">
                     <div>
-                        <h1>Título do projeto</h1>
-                        <p>Essa é a descrição do meu projeto</p>
+                        <h3 class="infos__projetos__titulo">Título do projeto</h3>
+                        <p class="infos__projetos__descricao">Essa é a descrição do meu projeto</p>
                     </div>
 
-                    <div class="menu-social">
-                        <div class="comentario"><img src="imagens/comment.svg">
-                            <p>25</p>
-                        </div>
-                        <div class="gostei"><img src="imagens/like.svg" alt="">
-                            <p>14</p>
-                        </div>
-                        <div class="mais">
+                    <ul class="menu__social__lista ">
+                        <li class="menu__social">
+                            <div class="comentario"></div>
+                            <p>18</p>
+                        </li>
+                        <li class="menu__social ">
+                            <div class="gostei"></div>
+                            <p>22</p>
+                        </li>
+                        <li class="menu__social mais">
                             <span></span>
                             <span></span>
                             <span></span>
-                        </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="infos__projetos__comunidade" id="segundo__projetos">
+                    <div>
+                        <h3 class="infos__projetos__titulo">Título do projeto</h3>
+                        <p class="infos__projetos__descricao">Essa é a descrição do meu projeto</p>
                     </div>
+
+                    <ul class="menu__social__lista ">
+                        <li class="menu__social">
+                            <div class="comentario"></div>
+                            <p>18</p>
+                        </li>
+                        <li class="menu__social ">
+                            <div class="gostei"></div>
+                            <p>22</p>
+                        </li>
+                        <li class="menu__social mais">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="menu-direito-comunidade">
-                <h2>Mais projetos</h2>
-                <div class="container-comunidade">
-                    <div class="fundo-editor-comunidade" style="background-color: #FFBD2E;">
-                        <div class="editor-codigo-comunidade">
-                            <div class="bolinhas">
-                                <span style="width:12px;height:12px;display:flex;background-color:#FF5F56;border-radius: 50%;"></span>
-                                <span style="width:12px;height:12px;display:flex;background-color:#FFBD2E;border-radius: 50%;"></span>
-                                <span style="width:12px;height:12px;display:flex;background-color:#27C93F;border-radius: 50%;"></span>
-                            </div>
-                            <textarea class="campo-codigo"></textarea>
+            <div class="menu__secundario__comunidade">
+
+                <div class="menu__secundario__comunidade__container">
+                    <div class="principal__editor__comunidade" style="background-color: #27C93F;">
+                        <div class="editor__codigo__comunidade "></div>
+                        <div class="bolinhas__editor">
+                            <span style="background:#FF5F56;"></span>
+                            <span style="background:#FFBD2E;"></span>
+                            <span style="background:#27C93F;"></span>
                         </div>
                     </div>
-                    <div class="infos-projetos">
-                        <div class="menu-social">
-                            <div class="comentario"><img src="imagens/comment.svg">
-                                <p>8</p>
-                            </div>
-                            <div class="gostei"><img src="imagens/like.svg" alt="">
-                                <p>4</p>
-                            </div>
-                            <div class="mais">
+                    <div class="infos__projetos__comunidade">
+                        <ul class="menu__social__lista__simplificado ">
+                            <li class="menu__social">
+                                <div class="comentario"></div>
+                                <p>18</p>
+                            </li>
+                            <li class="menu__social ">
+                                <div class="gostei"></div>
+                                <p>22</p>
+                            </li>
+                            <li class="menu__social mais">
                                 <span></span>
                                 <span></span>
                                 <span></span>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
 
-                    <div class="fundo-editor-comunidade">
-                        <div class="editor-codigo-comunidade">
-                            <div class="bolinhas">
-                                <span style="width:12px;height:12px;display:flex;background-color:#FF5F56;border-radius: 50%;"></span>
-                                <span style="width:12px;height:12px;display:flex;background-color:#FFBD2E;border-radius: 50%;"></span>
-                                <span style="width:12px;height:12px;display:flex;background-color:#27C93F;border-radius: 50%;"></span>
-                            </div>
-                            <textarea class="campo-codigo"></textarea>
+                    <div class="principal__editor__comunidade" style="background-color: #27C93F;">
+                        <div class="editor__codigo__comunidade "></div>
+                        <div class="bolinhas__editor">
+                            <span style="background:#FF5F56;"></span>
+                            <span style="background:#FFBD2E;"></span>
+                            <span style="background:#27C93F;"></span>
                         </div>
                     </div>
-                    <div class="infos-projetos">
-                        <div class="menu-social">
-                            <div class="comentario"><img src="imagens/comment.svg">
-                                <p>6</p>
-                            </div>
-                            <div class="gostei"><img src="imagens/like.svg">
-                                <p>6</p>
-                            </div>
-                            <div class="mais">
+                    <div class="infos__projetos__comunidade">
+                        <ul class="menu__social__lista__simplificado">
+                            <li class="menu__social">
+                                <div class="comentario"></div>
+                                <p>18</p>
+                            </li>
+                            <li class="menu__social ">
+                                <div class="gostei"></div>
+                                <p>22</p>
+                            </li>
+                            <li class="menu__social mais">
                                 <span></span>
                                 <span></span>
                                 <span></span>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
                     <a>
-                        <h2>Mais projetos</h2>
+                        <h2 class="mais__projetos">Mais projetos</h2>
                     </a>
                 </div>
             </div>
         </div>
+        </div>
 
     </main>
+
+
 </body>
 
 </html>
