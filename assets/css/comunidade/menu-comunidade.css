@@ -1,0 +1,72 @@
+.menu__secundario__comunidade {
+    display: flex;
+    width: 40vw;
+}
+
+.menu__secundario__comunidade__container {
+    display: flex;
+    background: #FFFFFF16;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    padding: 5%;
+    padding-bottom: 1%;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__secundario__comunidade__container .infos__projetos__comunidade {
+    height: 200px;
+    width: 29%;
+    justify-content: center;
+}
+
+.menu__secundario__comunidade__container .principal__editor__comunidade {
+    width: 69%;
+    height: 200px;
+    padding: 20px;
+}
+
+.infos__projetos__comunidade {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: #00000029;
+    height: 150px;
+    width: 40%;
+    border-radius: 8px;
+    padding: 1em;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.infos__projetos__titulo {
+    display: flex;
+    color: #FFFFFF;
+    font-family: Inter;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.mais__projetos:hover {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1155PX) {
+    .infos__projetos__comunidade {
+        width: 90%;
+    }
+    .menu__secundario__comunidade {
+        width: 100%;
+        justify-content: center;
+    }
+    .menu__secundario__comunidade__container {
+        width: 90%;
+    }
+}
