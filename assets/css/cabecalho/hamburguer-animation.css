@@ -1,0 +1,133 @@
+.menu__hamburguer__div {
+    display: none;
+    border-radius: 8px;
+    width: 30px;
+    height: 2px;
+}
+
+.hamburguer {
+    position: fixed;
+    z-index: 2;
+    display: block;
+    background: #fff;
+    width: 30px;
+    height: 2px;
+    transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+    background: #fff;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before {
+    top: -10px;
+}
+
+.hamburguer:after {
+    bottom: -10px;
+}
+
+#menu__hamburguer {
+    display: none;
+}
+
+input:checked~label .hamburguer {
+    transform: rotate(45deg);
+    right: 55px;
+}
+
+input:checked~label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+input:checked~label .hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+input:checked~label .menu__hamburguer__div {
+    position: fixed;
+    background: #2d415bf0;
+    right: 5%;
+    top: 2%;
+    height: 430px;
+    width: 300px;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+    padding: 2rem;
+    transition: 0.5s ease-in-out;
+}
+
+.menu__navegacao__hamburguer {
+    display: none;
+}
+
+input:checked~label .menu__navegacao__hamburguer {
+    display: flex;
+    margin-top: 4 rem;
+}
+
+input:checked~label .hamburguer__div {
+    display: flex;
+    transition: 1s ease-in-out;
+}
+
+.hamburguer__div {
+    display: none;
+    width: 100%;
+    height: 1px;
+    background-color: #b4c4daf0;
+    margin-top: 1em;
+}
+
+.cabecalho__perfil__hamburguer {
+    display: none;
+}
+
+input:checked~label .cabecalho__perfil__hamburguer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1em 0 1em 0;
+    background-color: #5081FB29;
+    ;
+    border-radius: 8px;
+}
+
+.cabecalho__perfil__foto__hamburguer {
+    width: 32px;
+}
+
+.logout {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background: url(/assets/img/logout.svg) no-repeat;
+}
+
+.config {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background: url(/assets/img/config.svg) no-repeat;
+}
+
+@media screen and (max-width: 1155px) {
+    .menu__hamburguer__div {
+        display: flex;
+    }
+    .menu__navegacao__hamburguer {
+        display: none;
+        align-items: flex-start;
+    }
+}
