@@ -28,13 +28,40 @@
             <a href="index.html" class="logo"><img src="assets/img/logo.svg" alt="Logo da Alura Dev"></a>
             <div class="cabecalho__caixa__busca"><input type="text" class="caixa__busca__estilo" id="caixa__busca__primaria" placeholder="Busque por algo"></div>
             <div class="cabecalho__lupa__busca"> <input type="image" src="assets/img/lupa.svg"></div>
-            <div><input id="menu__hamburguer" type="checkbox" />
+
+            <div class="cabecalho__hamburguer"><input id="menu__hamburguer" type="checkbox" />
                 <label for="menu__hamburguer">
-                            <div class="menu__hamburguer__div">
-                            <span class="hamburguer"></span>
-                            </div>
-                    </label>
+                    <span class="hamburguer"></span>
+                    <div class="menu__hamburguer__div">
+                        <nav class="menu__navegacao__hamburguer">                                
+                            <ul class="menu__navegacao__lista">
+                                <a class="menu__navegacao__link" href="index.html">
+                                    <li class="menu__navegacao__item"><div id="menu__navegacao--editor" alt="Logo editor de código"></div></li>
+                                    <p class="menu__navecacao__texto">Editor de código</p>
+                                </a>
+                                <a class="menu__navegacao__link" href="comunidade.html">
+                                    <li class="menu__navegacao__item ativo"><div id="menu__navegacao--comunidade" alt="Logo comunidade"></div></li>
+                                    <p class="menu__navecacao__texto">Comunidade</p>
+                                </a>
+                                <li class="hamburguer__div"></li>                                   
+                                <a class="cabecalho__perfil__hamburguer" href="#">
+                                    <li><img src="assets/img/foto-perfil.svg" alt="Foto de perfil" class="cabecalho__perfil__foto__hamburguer"></li>
+                                    <p>Erick William</p>
+                                </a>
+                                <a class="menu__navegacao__link" href="#">
+                                    <li class="menu__navegacao__item"><div class="logout"></div></li>
+                                    <p class="menu__navecacao__texto">Logout</p>
+                                </a>
+                                <a class="menu__navegacao__link" href="#">
+                                    <li class="menu__navegacao__item"><div class="config"></div></li>
+                                    <p class="menu__navecacao__texto">Configurações</p>
+                                </a>
+                            </ul>
+                        </nav>
+                    </div>
+                </label>
             </div>
+
             <div class="cabecalho__perfil">
                 <a><img src="assets/img/foto-perfil.svg" alt="Foto de perfil" class="cabecalho__perfil__foto">Erick William </a>
             </div>
