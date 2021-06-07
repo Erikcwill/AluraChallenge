@@ -2,134 +2,181 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Alura Dev</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/dark.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/menu-nav/menu-navegacao.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/cabecalho/cabecalho.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/cabecalho/hamburguer-animation.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/editor/editor.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/botoes.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/menu-secundario/menu-secundario.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Alura Dev</title>
+   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="assets/css/menu-nav/menu-navegacao.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/cabecalho/cabecalho.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/cabecalho/hamburguer-animation.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/editor/editor.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/botoes.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/principal/selecionar-temas.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/principal/estilo-caixade-busca.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/editor/bolinhas.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/menu-secundario/personalizacao.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/editor/menu-exportacao.css">
+   <link rel="stylesheet" title="dracula" type="text/css" href="assets/css/temas/dracula.css">
+   <link rel="alternate stylesheet" title="a11y-dark" type="text/css" href="assets/css/temas/a11y-dark.css" disabled="disabled">
+   <link rel="alternate stylesheet" title="arta" type="text/css" href="assets/css/temas/arta.css" disabled="disabled">
+   <link rel="alternate stylesheet" title="ascetic" type="text/css" href="assets/css/temas/ascetic.css" disabled="disabled">
+   <link rel="alternate stylesheet" title="tomorrow" type="text/css" href="assets/css/temas/tomorrow.css" disabled="disabled">
+   <link rel="alternate stylesheet" title="vs2015" type="text/css" href="assets/css/temas/vs2015.css" disabled="disabled">
+   <link rel="alternate stylesheet" title="xcode" type="text/css" href="assets/css/temas/xcode.css" disabled="disabled">
+   <link rel="alternate stylesheet" title="xt256" type="text/css" href="assets/css/temas/xt256.css" disabled="disabled">
+   <link rel="alternate stylesheet" title="zenburn" type="text/css" href="assets/css/temas/zenburn.css" disabled="disabled">
 </head>
 
 <body>
-    <header class="cabecalho">
-        <div class="container">
-            <a href="index.html" class="logo"><img src="assets/img/logo.svg" alt="Logo da Alura Dev"></a>
-            <div class="cabecalho__caixa__busca"><input type="text" class="caixa__busca__estilo" id="caixa__busca__primaria" placeholder="Busque por algo"></div>
-            <div class="cabecalho__lupa__busca"> <input type="image" src="assets/img/lupa.svg"></div>
+   <header class="cabecalho">
+      <div class="container">
+         <a class="logo" href="index.html"><img src="assets/img/logo.svg" alt="Logo da Alura Dev"></a>
+         <div class="cabecalho__caixa__busca"><input type="text" class="caixa__busca__estilo" id="caixa__busca__primaria" placeholder="Busque por algo"></div>
+         <div class="cabecalho__lupa__busca"> <input type="image" src="assets/img/lupa.svg"></div>
+         <div class="cabecalho__hamburguer">
+            <section class="layout__menu__hamburguer">
+               <input id="menu__hamburguer" type="checkbox" />
+               <label for="menu__hamburguer">S
+               <span class="hamburguer"></span>
+                  <div class="menu__hamburguer__div">
+                     <nav class="menu__navegacao__hamburguer">
+                        <ul class="menu__navegacao__lista">
+                           <a class="menu__navegacao__link" href="index.html">
+                              <li class="menu__navegacao__item">
+                                 <div id="menu__navegacao--editor"></div>
+                              </li>
+                              <p class="menu__navecacao__texto">Editor de código</p>
+                           </a>
+                           <a class="menu__navegacao__link" href="comunidade.html">
+                              <li class="menu__navegacao__item ativo"><div id="menu__navegacao--comunidade"></div></li>
+                              <p class="menu__navecacao__texto">Comunidade</p>
+                           </a>
+                              <li class="hamburguer__div"></li>
+                           <a class="cabecalho__perfil__hamburguer" href="#">
+                              <li><img src="assets/img/foto-perfil.svg" alt="Foto de perfil" class="cabecalho__perfil__foto__hamburguer"></li>
+                              <p>Erick William</p>
+                           </a>
+                           <a class="menu__navegacao__link" href="#">
+                              <li class="menu__navegacao__item"><div class="logout"></div></li>
+                              <p class="menu__navecacao__texto">Logout</p>
+                           </a>
+                           <a class="menu__navegacao__link" href="#">
+                              <li class="menu__navegacao__item"><div class="config"></div></li>
+                              <p class="menu__navecacao__texto">Configurações</p>
+                           </a>
+                        </ul>
+                     </nav>
+                  </div>
+					</label>
+            </section>
+         </div>
+         <div class="cabecalho__perfil">
+            <a><img src="assets/img/foto-perfil.svg" alt="Foto de perfil" class="cabecalho__perfil__foto">Erick William</a>
+         </div>
+      </div>
+   </header>
 
-            <div class="cabecalho__hamburguer"><input id="menu__hamburguer" type="checkbox" />
-                <label for="menu__hamburguer">
-                    <span class="hamburguer"></span>
-                    <div class="menu__hamburguer__div">
-                        <nav class="menu__navegacao__hamburguer">                                
-                            <ul class="menu__navegacao__lista">
-                                <a class="menu__navegacao__link" href="index.html">
-                                    <li class="menu__navegacao__item"><div id="menu__navegacao--editor" alt="Logo editor de código"></div></li>
-                                    <p class="menu__navecacao__texto">Editor de código</p>
-                                </a>
-                                <a class="menu__navegacao__link" href="comunidade.html">
-                                    <li class="menu__navegacao__item ativo"><div id="menu__navegacao--comunidade" alt="Logo comunidade"></div></li>
-                                    <p class="menu__navecacao__texto">Comunidade</p>
-                                </a>
-                                <li class="hamburguer__div"></li>                                   
-                                <a class="cabecalho__perfil__hamburguer" href="#">
-                                    <li><img src="assets/img/foto-perfil.svg" alt="Foto de perfil" class="cabecalho__perfil__foto__hamburguer"></li>
-                                    <p>Erick William</p>
-                                </a>
-                                <a class="menu__navegacao__link" href="#">
-                                    <li class="menu__navegacao__item"><div class="logout"></div></li>
-                                    <p class="menu__navecacao__texto">Logout</p>
-                                </a>
-                                <a class="menu__navegacao__link" href="#">
-                                    <li class="menu__navegacao__item"><div class="config"></div></li>
-                                    <p class="menu__navecacao__texto">Configurações</p>
-                                </a>
-                            </ul>
-                        </nav>
-                    </div>
-                </label>
+   <main class="conteudo">
+      <div class="container">
+         <nav class="menu__navegacao">
+            <h2 class="menu__navegacao--titulo">Menu</h2>
+            <ul class="menu__navegacao__lista">
+               <a class="menu__navegacao__link" href="index.html">
+                  <li class="menu__navegacao__item ativo">
+                     <div id="menu__navegacao--editor"></div>
+                  </li>
+                  <p class="menu__navecacao__texto">Editor de código</p>
+               </a>
+               <a class="menu__navegacao__link" href="comunidade.html">
+                  <li class="menu__navegacao__item">
+                     <div id="menu__navegacao--comunidade"></div>
+                  </li>
+                  <p class="menu__navecacao__texto">Comunidade</p>
+               </a>
+            </ul>
+         </nav>
+
+         <div class=principal>
+            <div class="area__editor">
+               <div class="menu__exportacao">
+                  <button id="botao__menu__exportacao" class="estilo__exportacao hljs"> exportar</button>
+                  <div class="menu__exportacao__container">
+                     <div class="sub__menus__exportacao">
+                        <button id="botao__exportar__imagem" class="botoes__exportacao hljs">salvar</button>
+                        <select id="tipo__imagem" class="tipos__exportacao hlsj">
+                           <option value="jpg">JPG</option>
+                           <option value="png">PNG</option>
+                           <option value="svg">SVG</option>
+								</select>
+                     </div>
+                     <div class="sub__menus__exportacao">
+                        <button id="botao__exportar__codigo" class="botoes__exportacao hljs">exportar</button>
+                        <select id="tipo__codigo" class="tipos__exportacao hlsj">
+                           <option value="html"><p class = "hljs" >HTML</p></option>
+                           <option value="css"><p>CSS</p></option>
+                           <option value="js"><p>Javascript</p></option>
+								</select>
+                     </div>
+                  </div>
+               </div>
+               <div class="principal__editor" id="principal__editor">
+                  <div class="bolinhas__editor"></div>
+                  <div class="principal__editor__area__codigo">
+
+                     <code class=" hljs preview" contenteditable="true" aria-label='editor'>  </code>
+                  </div>
+               </div>
             </div>
+            <input class="layout__botao highlight" type="button" value="Visualizar com o highlight"></div>
 
-
-            <div class="cabecalho__perfil">
-                <a><img src="assets/img/foto-perfil.svg" alt="Foto de perfil" class="cabecalho__perfil__foto">Erick William</a>
+         <div class="menu__secundario">
+            <h2 class="menu__secundario__titulo">Seu projeto</h2>
+            <div class="menu__secundario__input">
+               <input id="input__projeto" type="text" class="caixa__busca__estilo" placeholder="Nome do seu projeto">
             </div>
-        </div>
-    </header>
-
-    <main class="conteudo">
-        <div class="container">
-            <nav class="menu__navegacao">
-                <h2 class="menu__navegacao--titulo">Menu</h2>
-                <ul class="menu__navegacao__lista">
-                    <a class="menu__navegacao__link" href="index.html">
-                        <li class="menu__navegacao__item ativo">
-                            <div id="menu__navegacao--editor" alt="Logo editor de código"></div>
-                        </li>
-                        <p class="menu__navecacao__texto">Editor de código</p>
-                    </a>
-                    <a class="menu__navegacao__link" href="comunidade.html">
-                        <li class="menu__navegacao__item">
-                            <div id="menu__navegacao--comunidade" alt="Logo comunidade"></div>
-                        </li>
-                        <p class="menu__navecacao__texto">Comunidade</p>
-                    </a>
-                </ul>
-            </nav>
-
-            <div class=principal>
-                <div class="principal__editor">
-                    <div class="bolinhas__editor">
-                        <span style="background:#FF5F56;"></span>
-                        <span style="background:#FFBD2E;"></span>
-                        <span style="background:#27C93F;"></span>
-                    </div>
-                    <div class="principal__editor__area__codigo">
-                        <code class="preview hljs" contenteditable="true" aria-label='editor'></code>
-                    </div>
-                </div>
-                <input class="layout__botao highlight" type="button" value="Visualizar com o highlight">
+            <div class="menu__secundario__input">
+               <textarea id="input__descricao" class="caixa__busca__estilo" placeholder="Descrição do seu projeto "></textarea>
             </div>
+            <h2 class="menu__secundario__titulo">Personalização</h2>
+            <div class="menu__secundario__personalizacao">
+               <select class="caixa__busca__estilo menu__secundario__input " name="linguagem" id="linguagem">
+						<option value="javascript">JavaScript</option>
+						<option value="HTML">HTML</option>
+						<option value="CSS">CSS</option>
+					</select>
+               <input type="color" class="menu__secundario__colorpick menu__secundario__input" value="#6BD1FF">
 
-            <div class="menu__secundario">
-                <h2 class="menu__secundario__titulo">Seu projeto</h2>
-
-                <div class="menu__secundario__input">
-                    <input id="input__projeto" type="text" class="caixa__busca__estilo" placeholder="Nome do seu projeto">
-                </div>
-                <div class="menu__secundario__input">
-                    <textarea id="input__descricao" class="caixa__busca__estilo" placeholder="Descrição do seu projeto "></textarea>
-                </div>
-
-                <h2 class="menu__secundario__titulo">Personalização</h2>
-
-                <div class="menu__secundario__personalizacao">
-                    <select class="caixa__busca__estilo menu__secundario__input " name="linguagem" id="linguagem">
-							<option value="javascript">JavaScript</option>
-							<option value="HTML">HTML</option>
-							<option value="CSS">CSS</option></select>
-
-                    <input type="color" class="menu__secundario__colorpick menu__secundario__input" value="#6BD1FF">
-                </div>
-                <input class="layout__botao salvar__projeto" type="button" value="Salvar Projeto">
+               <select class="styles caixa__busca__estilo " id="tema">
+						<option id="dracula" value="dracula" class="current">dracula</option>
+						<option id="a11y-dark" value="a11y-dark" class>a11y-dark</option>
+						<option id="arta" value="arta" class>arta</option>
+						<option id="ascetic" value="ascetic" class>ascetic</option>
+						<option id="tomorrow" value="tomorrow" class>tomorrow</option>
+						<option id="vs2015" value="vs2015" class>vs2015</option>
+						<option id="xcode" value="xcode" class>xcode</option>
+						<option id="xt256" value="xt256" class>xt256</option>
+						<option id="zenburn" value="zenburn" class>zenburn</option>
+					</select>
             </div>
-        </div>
-        </div>
+            <input class="layout__botao salvar__projeto" type="button" value="Salvar Projeto">
+         </div>
+      </div>
+   </main>
 
-    </main>
-    <script src="js/main.js"></script>
-    <script src="assets/highlight/highlight.pack.js"></script>
-    <script src="js/highlight.js"></script>
+   <script src="assets/js/selecionarCor.js"></script>
+   <script src="assets/highlightPack/highlight.pack.js"></script>
+   <script src="assets/js/salvarProjeto.js"></script>
+   <script src="assets/js/highlight.js"></script>
+   <script src="assets/js/trocarTema.js"></script>
+   <script src="assets/js/exportar.js"></script>
+   <script src="assets/js/fileSaver.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+
 </body>
 
 </html>

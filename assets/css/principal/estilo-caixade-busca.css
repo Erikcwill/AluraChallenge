@@ -1,0 +1,38 @@
+.caixa__busca__estilo {
+    font-family: 'Inter', sans-serif;
+    background: #FFFFFF29;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 16px;
+    opacity: 64%;
+    color: #FFFFFF;
+    border: #FFFFFF;
+    outline: none;
+}
+
+.caixa__busca__estilo:hover {
+    background: #FFFFFF3D;
+}
+
+.caixa__busca__estilo:focus {
+    background: #FFFFFF3D;
+    color: #FFFFFF;
+}
+
+::placeholder {
+    color: #FFFFFF;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 5px;
+}
+
+p {
+    color: #FFFFFF;
+}

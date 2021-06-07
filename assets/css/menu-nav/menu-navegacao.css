@@ -43,11 +43,17 @@
 }
 
 #menu__navegacao--editor {
+    background: url(/assets/img/editor-menu-logo.svg) no-repeat;
+    height: 16px;
+    width: 20px;
     display: flex;
     align-self: center;
 }
 
 #menu__navegacao--comunidade {
+    background: url(/assets/img/comunidade-menu-logo.svg) no-repeat;
+    height: 16px;
+    width: 20px;
     display: flex;
     align-self: center;
 }

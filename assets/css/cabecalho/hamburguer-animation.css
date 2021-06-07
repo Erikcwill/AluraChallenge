@@ -5,13 +5,26 @@
     height: 2px;
 }
 
-.hamburguer {
+.layout__menu__hamburguer {
+    z-index: 1;
     position: fixed;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+    background: #5081FB29;
+}
+
+.hamburguer {
+    position: absolute;
     z-index: 2;
-    display: block;
+    display: flex;
     background: #fff;
     width: 30px;
     height: 2px;
+    top: 45%;
     transition: 0.5s ease-in-out;
 }
 
@@ -40,7 +53,7 @@
 
 input:checked~label .hamburguer {
     transform: rotate(45deg);
-    right: 55px;
+    right: 10px;
 }
 
 input:checked~label .hamburguer:before {
@@ -67,13 +80,8 @@ input:checked~label .menu__hamburguer__div {
     transition: 0.5s ease-in-out;
 }
 
-.menu__navegacao__hamburguer {
-    display: none;
-}
-
 input:checked~label .menu__navegacao__hamburguer {
     display: flex;
-    margin-top: 4 rem;
 }
 
 input:checked~label .hamburguer__div {

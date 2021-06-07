@@ -2,48 +2,52 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Alura Dev</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/dark.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/menu-nav/menu-navegacao.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/cabecalho/cabecalho.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/cabecalho/hamburguer-animation.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/editor/editor.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/botoes.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/menu-secundario/menu-secundario.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/comunidade/menu-comunidade.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/comunidade/menu-social.css">
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Alura Dev</title>
+   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="assets/css/menu-nav/menu-navegacao.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/cabecalho/cabecalho.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/cabecalho/hamburguer-animation.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/editor/editor.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/botoes.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/comunidade/menu-comunidade.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/comunidade/menu-social.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/principal/estilo-caixade-busca.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/editor/bolinhas.css">
+   <link rel="stylesheet" title="dracula" type="text/css" href="assets/css/temas/dracula.css">
+
 </head>
 
 <body>
-    <header class="cabecalho">
-        <div class="container">
-            <a href="index.html" class="logo"><img src="assets/img/logo.svg" alt="Logo da Alura Dev"></a>
-            <div class="cabecalho__caixa__busca"><input type="text" class="caixa__busca__estilo" id="caixa__busca__primaria" placeholder="Busque por algo"></div>
-            <div class="cabecalho__lupa__busca"> <input type="image" src="assets/img/lupa.svg"></div>
+   <header class="cabecalho">
+      <div class="container">
+         <a href="index.html" class="logo"><img src="assets/img/logo.svg" alt="Logo da Alura Dev"></a>
+         <div class="cabecalho__caixa__busca"><input type="text" class="caixa__busca__estilo" id="caixa__busca__primaria" placeholder="Busque por algo"></div>
+         <div class="cabecalho__lupa__busca"> <input type="image" src="assets/img/lupa.svg"></div>
 
-            <div class="cabecalho__hamburguer"><input id="menu__hamburguer" type="checkbox" />
-                <label for="menu__hamburguer">
+         <div class="cabecalho__hamburguer">
+            <section class="layout__menu__hamburguer">
+               <input id="menu__hamburguer" type="checkbox" />
+               <label for="menu__hamburguer">
                     <span class="hamburguer"></span>
                     <div class="menu__hamburguer__div">
-                        <nav class="menu__navegacao__hamburguer">                                
+                        <nav class="menu__navegacao__hamburguer">
                             <ul class="menu__navegacao__lista">
                                 <a class="menu__navegacao__link" href="index.html">
-                                    <li class="menu__navegacao__item"><div id="menu__navegacao--editor" alt="Logo editor de código"></div></li>
+                                    <li class="menu__navegacao__item"><div id="menu__navegacao--editor"></div></li>
                                     <p class="menu__navecacao__texto">Editor de código</p>
                                 </a>
                                 <a class="menu__navegacao__link" href="comunidade.html">
-                                    <li class="menu__navegacao__item ativo"><div id="menu__navegacao--comunidade" alt="Logo comunidade"></div></li>
+                                    <li class="menu__navegacao__item ativo"><div id="menu__navegacao--comunidade"></div></li>
                                     <p class="menu__navecacao__texto">Comunidade</p>
                                 </a>
-                                <li class="hamburguer__div"></li>                                   
+                                <li class="hamburguer__div"></li>
                                 <a class="cabecalho__perfil__hamburguer" href="#">
                                     <li><img src="assets/img/foto-perfil.svg" alt="Foto de perfil" class="cabecalho__perfil__foto__hamburguer"></li>
                                     <p>Erick William</p>
@@ -59,163 +63,47 @@
                             </ul>
                         </nav>
                     </div>
-                </label>
-            </div>
-
-            <div class="cabecalho__perfil">
-                <a><img src="assets/img/foto-perfil.svg" alt="Foto de perfil" class="cabecalho__perfil__foto">Erick William </a>
-            </div>
-        </div>
-    </header>
-
-    <main class="conteudo">
-        <div class="container">
-            <nav class="menu__navegacao">
-                <h2 class="menu__navegacao--titulo">Menu</h2>
-                <ul class="menu__navegacao__lista">
-                    <a class="menu__navegacao__link" href="index.html">
-                        <li class="menu__navegacao__item "><img id="menu__navegacao--editor" src="assets/img/comunidade-menu-logo.svg" alt="Logo editor de código"></li>
-                        <p class="menu__navecacao__texto">Editor de código</p>
-                    </a>
-                    <a class="menu__navegacao__link " href="comunidade.html">
-                        <li class="menu__navegacao__item ativo"><img id="menu__navegacao--comunidade" src="assets/img/comunidade-menu-logo.svg" alt="Logo comunidade"></li>
-                        <p class="menu__navecacao__texto">Comunidade</p>
-                    </a>
-                </ul>
-            </nav>
-
-            <div class=principal__comunidade>
-                <div class="principal__editor__comunidade" style="background-color: #27C93F;">
-                    <div class="bolinhas__editor">
-                        <span style="background:#FF5F56;"></span>
-                        <span style="background:#FFBD2E;"></span>
-                        <span style="background:#27C93F;"></span>
-                    </div>
-                    <div class="editor__codigo__comunidade">
-                    </div>
-                </div>
-
-                <div class="principal__editor__comunidade" id="segundo__editor" style="background-color: #27C93F;">
-                    <div class="bolinhas__editor">
-                        <span style="background:#FF5F56;"></span>
-                        <span style="background:#FFBD2E;"></span>
-                        <span style="background:#27C93F;"></span>
-                    </div>
-                    <div class="editor__codigo__comunidade">
-                    </div>
-                </div>
-                <div class="infos__projetos__comunidade">
-                    <div>
-                        <h3 class="infos__projetos__titulo">Título do projeto</h3>
-                        <p class="infos__projetos__descricao">Essa é a descrição do meu projeto</p>
-                    </div>
-
-                    <ul class="menu__social__lista ">
-                        <li class="menu__social">
-                            <div class="comentario"></div>
-                            <p>18</p>
-                        </li>
-                        <li class="menu__social ">
-                            <div class="gostei"></div>
-                            <p>22</p>
-                        </li>
-                        <li class="menu__social mais">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="infos__projetos__comunidade" id="segundo__projetos">
-                    <div>
-                        <h3 class="infos__projetos__titulo">Título do projeto</h3>
-                        <p class="infos__projetos__descricao">Essa é a descrição do meu projeto</p>
-                    </div>
-
-                    <ul class="menu__social__lista ">
-                        <li class="menu__social">
-                            <div class="comentario"></div>
-                            <p>18</p>
-                        </li>
-                        <li class="menu__social ">
-                            <div class="gostei"></div>
-                            <p>22</p>
-                        </li>
-                        <li class="menu__social mais">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="menu__secundario__comunidade">
-
-                <div class="menu__secundario__comunidade__container">
-                    <div class="principal__editor__comunidade" style="background-color: #27C93F;">
-                        <div class="editor__codigo__comunidade "></div>
-                        <div class="bolinhas__editor">
-                            <span style="background:#FF5F56;"></span>
-                            <span style="background:#FFBD2E;"></span>
-                            <span style="background:#27C93F;"></span>
-                        </div>
-                    </div>
-                    <div class="infos__projetos__comunidade">
-                        <ul class="menu__social__lista__simplificado ">
-                            <li class="menu__social">
-                                <div class="comentario"></div>
-                                <p>18</p>
-                            </li>
-                            <li class="menu__social ">
-                                <div class="gostei"></div>
-                                <p>22</p>
-                            </li>
-                            <li class="menu__social mais">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="principal__editor__comunidade" style="background-color: #27C93F;">
-                        <div class="editor__codigo__comunidade "></div>
-                        <div class="bolinhas__editor">
-                            <span style="background:#FF5F56;"></span>
-                            <span style="background:#FFBD2E;"></span>
-                            <span style="background:#27C93F;"></span>
-                        </div>
-                    </div>
-                    <div class="infos__projetos__comunidade">
-                        <ul class="menu__social__lista__simplificado">
-                            <li class="menu__social">
-                                <div class="comentario"></div>
-                                <p>18</p>
-                            </li>
-                            <li class="menu__social ">
-                                <div class="gostei"></div>
-                                <p>22</p>
-                            </li>
-                            <li class="menu__social mais">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </li>
-                        </ul>
-                    </div>
-                    <a>
-                        <h2 class="mais__projetos">Mais projetos</h2>
-                    </a>
-                </div>
-            </div>
-        </div>
-        </div>
-
-    </main>
+                    </label>
+            </section>
+         </div>
 
 
+
+         <div class="cabecalho__perfil">
+            <a><img src="assets/img/foto-perfil.svg" alt="Foto de perfil" class="cabecalho__perfil__foto">Erick William </a>
+         </div>
+      </div>
+   </header>
+
+   <main class="conteudo">
+      <div class="container">
+         <nav class="menu__navegacao">
+            <h2 class="menu__navegacao--titulo">Menu</h2>
+            <ul class="menu__navegacao__lista">
+               <a class="menu__navegacao__link" href="index.html">
+                  <li class="menu__navegacao__item ">
+                     <div id="menu__navegacao--editor"></div>
+                  </li>
+                  <p class="menu__navecacao__texto">Editor de código</p>
+               </a>
+               <a class="menu__navegacao__link" href="comunidade.html">
+                  <li class="menu__navegacao__item ativo">
+                     <div id="menu__navegacao--comunidade"></div>
+                  </li>
+                  <p class="menu__navecacao__texto">Comunidade</p>
+               </a>
+            </ul>
+         </nav>
+
+         <div class=principal__comunidade></div>
+
+      </div>
+   </main>
+   <script src="assets/js/comunidade.js"></script>
+   <script src="assets/highlightPack/highlight.pack.js"></script>
+   <script src="assets/js/contadorLike.js"></script>
+   <script src="assets/js/highlightComunidade.js"></script>
+   <script src="assets/js/comentario.js"></script>
 </body>
 
 </html>

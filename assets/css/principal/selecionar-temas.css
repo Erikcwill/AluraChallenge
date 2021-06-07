@@ -1,0 +1,43 @@
+.styles {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-radius: 8px;
+    background: #2B4059;
+    margin: 1em 0 1em 0;
+    padding: 1em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tema:hover {
+    background: #2B4059;
+}
+
+#tema {
+    margin-top: 0;
+}
+
+.styles li {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 50px;
+    width: 100px;
+    margin: 1em;
+    border-radius: 8px;
+    color: #a9afb7;
+    background-color: darkgray;
+}
+
+h4 {
+    color: #FFFFFF;
+    font-size: 10px;
+}
+
+.styles li:hover {
+    background-color: #FFFFFF35;
+    cursor: pointer;
+    border-style: solid;
+    border-color: #284c77;
+}
