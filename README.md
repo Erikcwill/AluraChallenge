@@ -7,7 +7,7 @@ Rápida descrição do objetivo de fazer esse projeto
 | :sparkles: Nome        | **AluraDev**
 | :label: Tecnologias | javascript, html, css (tecnologias utilizadas)
 | :rocket: URL         | https://alura-challenge-dun.vercel.app/index.html
-| :fire: Desafio     | https://url-do-desafio.com.br
+| :fire: Desafio     | https://www.alura.com.br/challenges/front-end-2?host=https://cursos.alura.com.br
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
 ![image](https://i.imgur.com/20aaOgO.png?text=imagem+lindona+do+meu+projeto#vitrinedev)
