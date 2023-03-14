@@ -1,3 +1,19 @@
+# AluraDev
+
+Rápida descrição do objetivo de fazer esse projeto
+
+| :placard: Vitrine.Dev |     |
+| -------------  | --- |
+| :sparkles: Nome        | **AluraDev**
+| :label: Tecnologias | javascript, html, css (tecnologias utilizadas)
+| :rocket: URL         | https://alura-challenge-dun.vercel.app/index.html
+| :fire: Desafio     | https://url-do-desafio.com.br
+
+<!-- Inserir imagem com a #vitrinedev ao final do link -->
+![](https://via.placeholder.com/1200x500.png?text=imagem+lindona+do+meu+projeto#vitrinedev)
+
+## Detalhes do projeto
+
 # AluraChallenge
 AluraDev projeto AluraChallenge:
 
@@ -23,7 +39,8 @@ Quais recursos possui o projeto:
   Possibilidade de exportar o código na linguagem selecionada.
   
 Segue um video do projeto em funcionamento! Agradeço a todo o grupo Alura por nos proporcionar essa atividade importante, instigante e preparatória! Qualquer coisa que possam me ajudar com dicas, criticas, ficaria muito grato em elevar meu conhecimento! 
-  
+
+
   
   
   
