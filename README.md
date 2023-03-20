@@ -11,7 +11,7 @@ Rápida descrição do objetivo de fazer esse projeto
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
 ![image](https://i.imgur.com/20aaOgO.png?text=imagem+lindona+do+meu+projeto#vitrinedev)
-![descrição da imagem](https://images.emojiterra.com/openmoji/v13.1/512px/1f1e7-1f1f7.png)
+
 
 ## Detalhes do projeto
 
